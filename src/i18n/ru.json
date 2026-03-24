@@ -1,0 +1,281 @@
+{
+  "title": "Ипотечный Калькулятор",
+  "subtitle": "Аннуитет · Дифференцированный · Досрочное · EURIBOR/SOFR · ПСК · Insights",
+  "theme": { "dark": "🌙", "light": "☀️" },
+  "tabs": { "params": "Параметры", "early": "Досрочное", "index": "Индекс", "costs": "Расходы" },
+  "currency": "Валюта",
+  "currencies": { "RUB": "₽  Российский рубль", "EUR": "€  Евро", "USD": "$  Доллар США", "RSD": "дин.  Сербский динар" },
+  "property": {
+    "title": "Объект недвижимости",
+    "price": "Стоимость",
+    "downPayment": "Взнос",
+    "loan": "Кредит",
+    "pmi": "⚠ <20% — возможен PMI"
+  },
+  "affordability": {
+    "salary": "Зарплата (нетто, мес.)",
+    "maxLoan": "Макс. доступный кредит",
+    "affordable": "Доступно",
+    "notAffordable": "Платёж превышает 50% зарплаты"
+  },
+  "loanAmount": "Сумма кредита",
+  "termYears": "Срок (лет)",
+  "termMonths": "+ месяцев",
+  "startDate": "Дата первого платежа",
+  "rateType": "Тип ставки",
+  "rateTypes": { "fixed": "Фиксированная", "index": "Фикс + Индекс" },
+  "fixedRate": "Ставка (% годовых)",
+  "indexLabel": "Индекс",
+  "indexRate": "Индекс, %",
+  "spreadLabel": "Спред, %",
+  "totalRateLabel": "Итоговая ставка = Индекс + Спред",
+  "payType": "Тип платежей",
+  "payTypes": { "annuity": "Аннуитетный", "diff": "Дифференц." },
+  "calculate": "⟳ Рассчитать",
+  "earlyPayments": {
+    "title": "Досрочные платежи",
+    "add": "+ Добавить",
+    "desc": "Разовые или регулярные платежи сверх графика.",
+    "empty": "Нет досрочных платежей",
+    "fromMonth": "С мес.",
+    "toMonth": "По мес.",
+    "type": "Тип",
+    "amountTypes": { "fixed": "Сумма", "pct": "% платежа" },
+    "amount": "Сумма",
+    "amountPct": "% от платежа",
+    "goal": "Цель",
+    "goals": { "reduce_term": "↓ Срок", "reduce_payment": "↓ Платёж" }
+  },
+  "indexChanges": {
+    "title": "Изменения индекса",
+    "add": "+ Добавить",
+    "desc": "Прогноз изменений EURIBOR/SOFR по месяцам.",
+    "empty": "Нет изменений",
+    "fromMonth": "С месяца",
+    "newRate": "Новый индекс (%)"
+  },
+  "emptyState": {
+    "title": "Заполните параметры и нажмите «Рассчитать»",
+    "desc": "Аннуитет · Дифф · EURIBOR/SOFR · Досрочное · Insights · Excel"
+  },
+  "stats": {
+    "monthlyPayment": "Ежемес. платёж",
+    "firstPayment": "Первый платёж",
+    "lastPayment": "Последний платёж",
+    "overpayment": "Переплата",
+    "totalPayments": "Всего выплат",
+    "totalInterest": "Из них проценты",
+    "psk": "ПСК (номин.)",
+    "ear": "Эфф. ставка EAR",
+    "actualTerm": "Фактический срок",
+    "principal": "Долг",
+    "interest": "Проценты",
+    "acquisitionCosts": "Доп. расходы",
+    "grandTotal": "Общая стоимость"
+  },
+  "years": "лет",
+  "months": "мес.",
+  "settings": {
+    "language": "Язык",
+    "theme": "Тема",
+    "light": "День",
+    "dark": "Ночь",
+    "colorScheme": "Цветовая схема"
+  },
+  "insights": {
+    "title": "Стратегия погашения",
+    "badge": "Insights",
+    "epEffect": "Эффект досрочных платежей",
+    "diffBetter": "Дифференцированный выгоднее",
+    "extraTenPercent": "Совет: +10% к платежу",
+    "extraTenPercentMore": "Дополнительно: +10%",
+    "bestTime": "Лучшее время для досрочного",
+    "strategy": "Стратегия: срок vs платёж",
+    "refi": "Рефинансирование −2 п.п.",
+    "taxDeduction": "Налоговый вычет (РФ)",
+    "overpayRatio": "Коэффициент переплаты",
+    "clickDetails": "Нажмите для подробностей",
+    "bestTimeDesc": "Первые {n} мес. — максимальная доля процентов в платеже",
+    "strategyValue": "↓ Срок выгоднее",
+    "strategyDesc": "↓ Срок — макс. экономия. ↓ Платёж — снижает нагрузку",
+    "saved": "Экономия",
+    "benchmarks": "Для сравнения: при 5%/20л ~58%, при 10%/20л ~115%, при 15%/20л ~190%",
+    "base": "Без досрочных",
+    "current": "Текущий план",
+    "withExtra": "С доплатой +10%",
+    "withoutExtra": "Без доплат",
+    "scenario": "Сценарий",
+    "recommendation": "Рекомендация: стабильный доход → ↓ Срок; нестабильный → ↓ Платёж",
+    "paymentBreakdown": "Структура платежа",
+    "paymentRange": "Диапазон платежей",
+    "salaryRule": "Правило 50% зарплаты",
+    "salaryRuleDesc": "Платёж ≤ 50% от зарплаты — критерий одобрения в Сербии."
+  },
+  "stressTest": {
+    "title": "Стресс-тест ставки",
+    "badge": "Риск",
+    "delta": "Изменение",
+    "newRate": "Новая ставка",
+    "newPayment": "Новый платёж",
+    "increase": "Рост",
+    "totalExtra": "Всего сверх",
+    "warning": "Плавающая ставка — выше чувствительность"
+  },
+  "milestones": {
+    "title": "Ключевые этапы",
+    "badge": "Таймлайн",
+    "principalPaid": "{pct} основного долга погашено",
+    "principalGtInterest": "Долг превышает проценты",
+    "remaining": "Остаток"
+  },
+  "charts": {
+    "title": "Графики",
+    "types": { "payments": "Платежи", "balance": "Баланс", "structure": "Структура", "annual": "По годам", "rate": "Ставка", "interestPrincipal": "Долг/%", "cumulative": "Накопл." },
+    "timeRanges": { "all": "Все", "y1": "1 год", "y5": "5 лет", "y10": "10 лет" },
+    "labels": {
+      "principal": "Осн. долг",
+      "interest": "Проценты",
+      "early": "Досрочно",
+      "balance": "Остаток",
+      "cumInterest": "Накопл. проценты",
+      "payment": "Платёж",
+      "annualRate": "% годовых"
+    },
+    "descs": {
+      "payments": "Разбивка ежемесячного платежа на основной долг, проценты и досрочные",
+      "balance": "Динамика остатка долга по месяцам",
+      "structure": "Структура каждого платежа: доля долга и процентов",
+      "annual": "Суммы платежей по годам",
+      "rate": "Изменение процентной ставки по месяцам",
+      "interestPrincipal": "Соотношение процентов и основного долга в каждом платеже",
+      "cumulative": "Накопительные суммы выплат по основному долгу и процентам"
+    }
+  },
+  "table": {
+    "title": "График платежей",
+    "csv": "⬇ CSV",
+    "excel": "⬇ Excel",
+    "print": "🖨 Печать",
+    "headers": { "no": "№ / Дата", "payment": "Платёж", "principal": "Долг", "interest": "Проценты", "extra": "Доп.", "balance": "Остаток", "rate": "%" },
+    "total": "ИТОГО"
+  },
+  "costs": {
+    "title": "Расходы при покупке",
+    "desc": "Дополнительные расходы, не входящие в тело кредита",
+    "total": "Итого расходов",
+    "fixed": "Фиксированные",
+    "percent": "Процентные",
+    "grand": "Общая стоимость (кредит + расходы)",
+    "reset": "По умолчанию",
+    "add": "+ Добавить расход",
+    "currency": "Валюта расходов",
+    "customLabel": "Название",
+    "customAmount": "Сумма",
+    "remove": "Удалить"
+  },
+  "rentVsBuy": {
+    "title": "Аренда vs Покупка",
+    "badge": "Анализ",
+    "monthlyRent": "Ежемесячная аренда",
+    "breakeven": "Точка окупаемости",
+    "never": "Покупка не окупается",
+    "rentTotal": "Аренда всего",
+    "buyTotal": "Чистая стоимость",
+    "equity": "Капитал"
+  },
+  "scenario": {
+    "title": "Сравнение сценариев",
+    "save": "Сохранить сценарий",
+    "clear": "Сбросить сценарий",
+    "scenarioA": "Сценарий A",
+    "scenarioB": "Сценарий B",
+    "delta": "Разница",
+    "badge": "Сравнение"
+  },
+  "inflation": {
+    "title": "Поправка на инфляцию",
+    "badge": "Реальная стоимость",
+    "rate": "Уровень инфляции (% в год)",
+    "year": "Год",
+    "nominal": "Номинал",
+    "real": "Реально (в сегодняшних деньгах)",
+    "loss": "Потеря покупательной силы",
+    "summary": "Последний платёж {nominal} ощущается как {real}",
+    "summaryDiff": "Последний платёж {nominal} ощущается как {real}"
+  },
+  "share": {
+    "button": "Поделиться",
+    "copied": "Ссылка скопирована!"
+  },
+  "earlyVsInvest": {
+    "title": "Досрочное vs Инвестиции",
+    "badge": "Сравнение",
+    "investRate": "Доходность инвестиций (% годовых)",
+    "extraAmount": "Ежемес. доп. сумма",
+    "strategy": "Стратегия",
+    "totalInvested": "Вложено всего",
+    "result": "Результат",
+    "netBenefit": "Чистая выгода",
+    "mortgageLabel": "Досрочное погашение",
+    "investLabel": "Инвестиции",
+    "winner": "Лучший вариант",
+    "note": "Доход от инвестиций может облагаться налогом."
+  },
+  "heatmap": {
+    "title": "Тепловая карта платежей",
+    "badge": "Проценты",
+    "interestShare": "Доля процентов",
+    "legend": "Доля процентов %"
+  },
+  "oneTime": "разово",
+  "loading": "загрузка",
+  "offline": "офлайн",
+  "close": "Закрыть",
+  "lang": "RU",
+  "info": {
+    "button": "Справка",
+    "title": "Справочник по ипотеке"
+  },
+  "modals": {
+    "loanInfo": {
+      "title": "Сумма кредита",
+      "body": "<p>Основной долг — сумма, которую банк выдаёт на руки. Не включает первоначальный взнос, страховку и комиссии.</p><p style=\"margin-top:9px;\">Типичный взнос: <strong>10–30%</strong>. При взносе ниже 20% банк нередко требует PMI/LMI.</p><div class=\"modal-links\"><span class=\"modal-links-title\">Подробнее:</span><a href=\"https://ru.wikipedia.org/wiki/%D0%98%D0%BF%D0%BE%D1%82%D0%B5%D0%BA%D0%B0\" target=\"_blank\">Ипотека — Википедия</a><a href=\"https://www.investopedia.com/terms/p/principal.asp\" target=\"_blank\">Principal (Investopedia)</a></div>"
+    },
+    "propInfo": {
+      "title": "Объект недвижимости",
+      "body": "<p>Введите стоимость объекта и первоначальный взнос — калькулятор автоматически рассчитает сумму кредита.</p><p style=\"margin-top:9px;\"><strong>LTV (Loan-to-Value)</strong> = Кредит / Стоимость. Банки предпочитают LTV ≤ 80% (взнос ≥ 20%).</p><p style=\"margin-top:9px;\">При взносе менее 20% возможно требование <strong>PMI</strong> (страхование ипотеки) — дополнительные 0.5–1% в год.</p><div class=\"modal-links\"><span class=\"modal-links-title\">Подробнее:</span><a href=\"https://www.investopedia.com/terms/l/loantovalue.asp\" target=\"_blank\">LTV Ratio (Investopedia)</a><a href=\"https://www.investopedia.com/terms/p/pmi.asp\" target=\"_blank\">PMI (Investopedia)</a></div>"
+    },
+    "rateTypeInfo": {
+      "title": "Тип ставки",
+      "body": "<p><strong>Фиксированная</strong> — не меняется весь срок. Предсказуемость и защита от роста ставок.</p><p style=\"margin-top:9px;\"><strong>Фикс + Индекс</strong> — рыночный индекс (EURIBOR/SOFR) + фиксированный спред банка.</p><div class=\"modal-links\"><span class=\"modal-links-title\">Подробнее:</span><a href=\"https://www.investopedia.com/terms/f/fixed-rate_mortgage.asp\" target=\"_blank\">Fixed-Rate Mortgage</a><a href=\"https://www.investopedia.com/terms/a/arm.asp\" target=\"_blank\">ARM Mortgage</a></div>"
+    },
+    "fixedRateInfo": {
+      "title": "Процентная ставка",
+      "body": "<p><strong>Номинальная годовая ставка</strong> из договора. Месячный процент = Ставка / 12.</p><p style=\"margin-top:9px;\">Формула аннуитетного платежа:<br><code>PMT = P × r / (1 − (1+r)^−n)</code></p><div class=\"modal-links\"><span class=\"modal-links-title\">Подробнее:</span><a href=\"https://www.investopedia.com/terms/a/apr.asp\" target=\"_blank\">APR (Investopedia)</a></div>"
+    },
+    "payTypeInfo": {
+      "title": "Тип платежей",
+      "body": "<p><strong>Аннуитетный</strong> — одинаковый платёж весь срок. <strong>Дифференцированный</strong> — долг делится равными частями, проценты убывают.</p><div class=\"modal-links\"><span class=\"modal-links-title\">Подробнее:</span><a href=\"https://www.investopedia.com/terms/a/amortization.asp\" target=\"_blank\">Amortization (Investopedia)</a></div>"
+    },
+    "indexInfo": {
+      "title": "Индекс EURIBOR / SOFR",
+      "body": "<p><strong>EURIBOR</strong> — ставка межбанковского рынка ЕС. <strong>SOFR</strong> — американский бенчмарк (NY Fed).</p><div class=\"modal-links\"><span class=\"modal-links-title\">Данные:</span><a href=\"https://www.euribor-rates.eu/ru/\" target=\"_blank\">euribor-rates.eu</a><a href=\"https://www.newyorkfed.org/markets/reference-rates/sofr\" target=\"_blank\">NY Fed — SOFR</a></div>"
+    },
+    "indexRateInfo": {
+      "title": "Значение индекса",
+      "body": "<p>Загружается автоматически из ECB Data API и NY Fed API.</p>"
+    },
+    "spreadInfo": {
+      "title": "Спред банка",
+      "body": "<p><strong>Спред</strong> — фиксированная надбавка банка поверх индекса. <code>Ставка = Индекс + Спред</code></p>"
+    },
+    "earlyPayInfo": {
+      "title": "Досрочное погашение",
+      "body": "<p>Платёж сверх графика. <strong>↓ Срок</strong> — максимальная экономия. <strong>↓ Платёж</strong> — снижение нагрузки.</p>"
+    },
+    "indexChangeInfo": {
+      "title": "Изменения индекса",
+      "body": "<p>Моделирование прогноза изменения EURIBOR/SOFR по месяцам.</p>"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+html[data-scheme=dracula]{
+  --bg:#282a36;--surface:#2d2f3d;--surface2:#343746;--border:#44475a;
+  --gold:#f1fa8c;--blue:#8be9fd;--green:#50fa7b;--red:#ff5555;
+  --text:#f8f8f2;--muted:#6272a4;--shadow:rgba(0,0,0,.5);
+  --hero-from:#282a36;--hero-to:#2d2f3d;--modal-bg:#2d2f3d;
+  --code-bg:rgba(255,255,255,.07);--row-ep:rgba(80,250,123,.04);
+  --tbl-sep:rgba(68,71,90,.5);--chart-grid:rgba(68,71,90,.5);
+}

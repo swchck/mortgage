@@ -1,0 +1,281 @@
+{
+  "title": "Mortgage Calculator",
+  "subtitle": "Annuity · Differentiated · Early Payments · EURIBOR/SOFR · APR · Insights",
+  "theme": { "dark": "🌙", "light": "☀️" },
+  "tabs": { "params": "Parameters", "early": "Early Pay", "index": "Index", "costs": "Costs" },
+  "currency": "Currency",
+  "currencies": { "RUB": "₽  Russian Ruble", "EUR": "€  Euro", "USD": "$  US Dollar", "RSD": "din.  Serbian Dinar" },
+  "property": {
+    "title": "Property",
+    "price": "Price",
+    "downPayment": "Down Payment",
+    "loan": "Loan",
+    "pmi": "⚠ <20% — PMI may apply"
+  },
+  "affordability": {
+    "salary": "Monthly Salary (net)",
+    "maxLoan": "Max affordable loan",
+    "affordable": "Affordable",
+    "notAffordable": "Payment exceeds 50% of salary"
+  },
+  "loanAmount": "Loan Amount",
+  "termYears": "Term (years)",
+  "termMonths": "+ months",
+  "startDate": "First Payment Date",
+  "rateType": "Rate Type",
+  "rateTypes": { "fixed": "Fixed", "index": "Fixed + Index" },
+  "fixedRate": "Rate (% annual)",
+  "indexLabel": "Index",
+  "indexRate": "Index, %",
+  "spreadLabel": "Spread, %",
+  "totalRateLabel": "Total rate = Index + Spread",
+  "payType": "Payment Type",
+  "payTypes": { "annuity": "Annuity", "diff": "Differentiated" },
+  "calculate": "⟳ Calculate",
+  "earlyPayments": {
+    "title": "Early Payments",
+    "add": "+ Add",
+    "desc": "One-time or recurring extra payments.",
+    "empty": "No early payments",
+    "fromMonth": "From mo.",
+    "toMonth": "To mo.",
+    "type": "Type",
+    "amountTypes": { "fixed": "Amount", "pct": "% of pmt" },
+    "amount": "Amount",
+    "amountPct": "% of payment",
+    "goal": "Goal",
+    "goals": { "reduce_term": "↓ Term", "reduce_payment": "↓ Payment" }
+  },
+  "indexChanges": {
+    "title": "Index Changes",
+    "add": "+ Add",
+    "desc": "Project EURIBOR/SOFR changes by month.",
+    "empty": "No changes",
+    "fromMonth": "From month",
+    "newRate": "New index (%)"
+  },
+  "emptyState": {
+    "title": "Fill in parameters and press \"Calculate\"",
+    "desc": "Annuity · Diff · EURIBOR/SOFR · Early Pay · Insights · Excel"
+  },
+  "stats": {
+    "monthlyPayment": "Monthly Payment",
+    "firstPayment": "First Payment",
+    "lastPayment": "Last Payment",
+    "overpayment": "Overpayment",
+    "totalPayments": "Total Payments",
+    "totalInterest": "Interest Paid",
+    "psk": "APR (nominal)",
+    "ear": "EAR (effective)",
+    "actualTerm": "Actual Term",
+    "principal": "Principal",
+    "interest": "Interest",
+    "acquisitionCosts": "Acquisition Costs",
+    "grandTotal": "Grand Total"
+  },
+  "years": "years",
+  "months": "mo.",
+  "settings": {
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "colorScheme": "Color Scheme"
+  },
+  "insights": {
+    "title": "Repayment Strategy",
+    "badge": "Insights",
+    "epEffect": "Early payment effect",
+    "diffBetter": "Differentiated is better",
+    "extraTenPercent": "Tip: +10% to payment",
+    "extraTenPercentMore": "Additionally: +10%",
+    "bestTime": "Best time for early payment",
+    "strategy": "Strategy: term vs payment",
+    "refi": "Refinancing −2 pp",
+    "taxDeduction": "Tax deduction (Russia)",
+    "overpayRatio": "Overpayment ratio",
+    "clickDetails": "Click for details",
+    "bestTimeDesc": "First {n} mo. — max interest share per payment",
+    "strategyValue": "↓ Term is better",
+    "strategyDesc": "↓ Term = max savings. ↓ Payment = lower burden",
+    "saved": "Saved",
+    "benchmarks": "Benchmarks: 5%/20y ~58%, 10%/20y ~115%, 15%/20y ~190%",
+    "base": "Without early payments",
+    "current": "Current plan",
+    "withExtra": "With +10% extra",
+    "withoutExtra": "Without extra",
+    "scenario": "Scenario",
+    "recommendation": "Recommendation: stable income → ↓ Term; unstable → ↓ Payment",
+    "paymentBreakdown": "Payment breakdown",
+    "paymentRange": "Payment range",
+    "salaryRule": "50% salary rule",
+    "salaryRuleDesc": "Payment ≤ 50% of salary — approval criterion in Serbia."
+  },
+  "stressTest": {
+    "title": "Rate Stress Test",
+    "badge": "Risk",
+    "delta": "Change",
+    "newRate": "New Rate",
+    "newPayment": "New Payment",
+    "increase": "Increase",
+    "totalExtra": "Total Extra",
+    "warning": "Variable rate — higher sensitivity"
+  },
+  "milestones": {
+    "title": "Key Milestones",
+    "badge": "Timeline",
+    "principalPaid": "{pct} of principal paid off",
+    "principalGtInterest": "Principal exceeds interest",
+    "remaining": "Remaining"
+  },
+  "charts": {
+    "title": "Charts",
+    "types": { "payments": "Payments", "balance": "Balance", "structure": "Structure", "annual": "Annual", "rate": "Rate", "interestPrincipal": "Princ./Int.", "cumulative": "Cumulative" },
+    "timeRanges": { "all": "All", "y1": "1 year", "y5": "5 years", "y10": "10 years" },
+    "labels": {
+      "principal": "Principal",
+      "interest": "Interest",
+      "early": "Early",
+      "balance": "Balance",
+      "cumInterest": "Cumul. Interest",
+      "payment": "Payment",
+      "annualRate": "% annual"
+    },
+    "descs": {
+      "payments": "Monthly payment breakdown into principal, interest and early payments",
+      "balance": "Remaining loan balance over time",
+      "structure": "Payment structure: principal and interest portions",
+      "annual": "Payment totals by year",
+      "rate": "Interest rate changes over time",
+      "interestPrincipal": "Interest to principal ratio in each payment",
+      "cumulative": "Cumulative principal and interest payments over time"
+    }
+  },
+  "table": {
+    "title": "Payment Schedule",
+    "csv": "⬇ CSV",
+    "excel": "⬇ Excel",
+    "print": "🖨 Print",
+    "headers": { "no": "# / Date", "payment": "Payment", "principal": "Principal", "interest": "Interest", "extra": "Extra", "balance": "Balance", "rate": "%" },
+    "total": "TOTAL"
+  },
+  "costs": {
+    "title": "Acquisition Costs",
+    "desc": "Additional costs not included in the mortgage",
+    "total": "Total Costs",
+    "fixed": "Fixed",
+    "percent": "Percentage",
+    "grand": "Total Cost (mortgage + costs)",
+    "reset": "Defaults",
+    "add": "+ Add cost",
+    "currency": "Costs currency",
+    "customLabel": "Name",
+    "customAmount": "Amount",
+    "remove": "Remove"
+  },
+  "rentVsBuy": {
+    "title": "Rent vs Buy",
+    "badge": "Analysis",
+    "monthlyRent": "Monthly Rent",
+    "breakeven": "Break-even Point",
+    "never": "Buying never breaks even",
+    "rentTotal": "Rent Total",
+    "buyTotal": "Net Buy Cost",
+    "equity": "Equity"
+  },
+  "scenario": {
+    "title": "Scenario Comparison",
+    "save": "Save Scenario",
+    "clear": "Clear Scenario",
+    "scenarioA": "Scenario A",
+    "scenarioB": "Scenario B",
+    "delta": "Delta",
+    "badge": "Compare"
+  },
+  "inflation": {
+    "title": "Inflation Correction",
+    "badge": "Real Value",
+    "rate": "Inflation rate (% per year)",
+    "year": "Year",
+    "nominal": "Nominal",
+    "real": "Real (today's money)",
+    "loss": "Purchasing power loss",
+    "summary": "Last payment of {nominal} feels like {real} today",
+    "summaryDiff": "Last payment of {nominal} feels like {real}"
+  },
+  "share": {
+    "button": "Share",
+    "copied": "Link copied!"
+  },
+  "earlyVsInvest": {
+    "title": "Early Repayment vs Investment",
+    "badge": "Compare",
+    "investRate": "Investment return (% annual)",
+    "extraAmount": "Monthly extra amount",
+    "strategy": "Strategy",
+    "totalInvested": "Total Invested",
+    "result": "Result",
+    "netBenefit": "Net Benefit",
+    "mortgageLabel": "Early Repayment",
+    "investLabel": "Investment",
+    "winner": "Better option",
+    "note": "Investment gains may be taxed. Returns vary."
+  },
+  "heatmap": {
+    "title": "Payment Heatmap",
+    "badge": "Interest",
+    "interestShare": "Interest share",
+    "legend": "Interest share %"
+  },
+  "oneTime": "one-time",
+  "loading": "loading",
+  "offline": "offline",
+  "close": "Close",
+  "lang": "EN",
+  "info": {
+    "button": "Guide",
+    "title": "Mortgage Guide"
+  },
+  "modals": {
+    "loanInfo": {
+      "title": "Loan Amount",
+      "body": "<p>The principal — the amount the bank lends you. Does not include down payment, insurance or fees.</p><p style=\"margin-top:9px;\">Typical down payment: <strong>10–30%</strong>. Below 20% the bank may require PMI/LMI.</p><div class=\"modal-links\"><span class=\"modal-links-title\">Learn more:</span><a href=\"https://www.investopedia.com/terms/p/principal.asp\" target=\"_blank\">Principal (Investopedia)</a></div>"
+    },
+    "propInfo": {
+      "title": "Property",
+      "body": "<p>Enter the property price and down payment — the calculator will compute the loan amount automatically.</p><p style=\"margin-top:9px;\"><strong>LTV (Loan-to-Value)</strong> = Loan / Price. Banks prefer LTV ≤ 80%.</p><div class=\"modal-links\"><span class=\"modal-links-title\">Learn more:</span><a href=\"https://www.investopedia.com/terms/l/loantovalue.asp\" target=\"_blank\">LTV Ratio</a></div>"
+    },
+    "rateTypeInfo": {
+      "title": "Rate Type",
+      "body": "<p><strong>Fixed</strong> — stays the same for the entire term. <strong>Fixed + Index</strong> — market index (EURIBOR/SOFR) + fixed bank spread.</p>"
+    },
+    "fixedRateInfo": {
+      "title": "Interest Rate",
+      "body": "<p><strong>Nominal annual rate</strong> from the contract. Monthly rate = Rate / 12.</p><p style=\"margin-top:9px;\">Annuity formula:<br><code>PMT = P × r / (1 − (1+r)^−n)</code></p>"
+    },
+    "payTypeInfo": {
+      "title": "Payment Type",
+      "body": "<p><strong>Annuity</strong> — equal payments throughout. <strong>Differentiated</strong> — principal split equally, interest decreasing.</p>"
+    },
+    "indexInfo": {
+      "title": "EURIBOR / SOFR Index",
+      "body": "<p><strong>EURIBOR</strong> — EU interbank rate. <strong>SOFR</strong> — US benchmark (NY Fed).</p>"
+    },
+    "indexRateInfo": {
+      "title": "Index Value",
+      "body": "<p>Loaded automatically from ECB Data API and NY Fed API.</p>"
+    },
+    "spreadInfo": {
+      "title": "Bank Spread",
+      "body": "<p><strong>Spread</strong> — fixed bank markup over the index. <code>Rate = Index + Spread</code></p>"
+    },
+    "earlyPayInfo": {
+      "title": "Early Payment",
+      "body": "<p>Extra payment above schedule. <strong>↓ Term</strong> — max savings. <strong>↓ Payment</strong> — reduced burden.</p>"
+    },
+    "indexChangeInfo": {
+      "title": "Index Changes",
+      "body": "<p>Model projected EURIBOR/SOFR changes by month.</p>"
+    }
+  }
+}

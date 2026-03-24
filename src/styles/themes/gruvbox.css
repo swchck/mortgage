@@ -1,0 +1,16 @@
+html[data-scheme=gruvbox]{
+  --bg:#282828;--surface:#3c3836;--surface2:#504945;--border:#665c54;
+  --gold:#fabd2f;--blue:#83a598;--green:#b8bb26;--red:#fb4934;
+  --text:#ebdbb2;--muted:#928374;--shadow:rgba(0,0,0,.5);
+  --hero-from:#282828;--hero-to:#3c3836;--modal-bg:#3c3836;
+  --code-bg:rgba(255,255,255,.06);--row-ep:rgba(184,187,38,.04);
+  --tbl-sep:rgba(102,92,84,.5);--chart-grid:rgba(102,92,84,.5);
+}
+html[data-theme=light][data-scheme=gruvbox-light]{
+  --bg:#fbf1c7;--surface:#f2e5bc;--surface2:#ebdbb2;--border:#d5c4a1;
+  --gold:#b57614;--blue:#458588;--green:#79740e;--red:#cc241d;
+  --text:#3c3836;--muted:#7c6f64;--shadow:rgba(0,0,0,.1);
+  --hero-from:#fbf1c7;--hero-to:#f2e5bc;--modal-bg:#f2e5bc;
+  --code-bg:rgba(0,0,0,.04);--row-ep:rgba(121,116,14,.04);
+  --tbl-sep:rgba(0,0,0,.06);--chart-grid:rgba(180,170,150,.3);
+}

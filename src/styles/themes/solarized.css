@@ -1,0 +1,16 @@
+html[data-scheme=solarized]{
+  --bg:#002b36;--surface:#073642;--surface2:#0a4050;--border:#586e75;
+  --gold:#b58900;--blue:#268bd2;--green:#859900;--red:#dc322f;
+  --text:#eee8d5;--muted:#839496;--shadow:rgba(0,0,0,.4);
+  --hero-from:#002b36;--hero-to:#073642;--modal-bg:#073642;
+  --code-bg:rgba(255,255,255,.06);--row-ep:rgba(133,153,0,.04);
+  --tbl-sep:rgba(88,110,117,.5);--chart-grid:rgba(88,110,117,.5);
+}
+html[data-theme=light][data-scheme=solarized-light]{
+  --bg:#fdf6e3;--surface:#eee8d5;--surface2:#e8e1cc;--border:#c9b99a;
+  --gold:#b58900;--blue:#268bd2;--green:#859900;--red:#dc322f;
+  --text:#073642;--muted:#657b83;--shadow:rgba(0,0,0,.1);
+  --hero-from:#fdf6e3;--hero-to:#eee8d5;--modal-bg:#eee8d5;
+  --code-bg:rgba(0,0,0,.04);--row-ep:rgba(133,153,0,.04);
+  --tbl-sep:rgba(0,0,0,.06);--chart-grid:rgba(180,180,160,.3);
+}

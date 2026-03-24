@@ -1,0 +1,8 @@
+html[data-scheme=rose-pine]{
+  --bg:#191724;--surface:#1f1d2e;--surface2:#26233a;--border:#3e3a52;
+  --gold:#f6c177;--blue:#9ccfd8;--green:#31748f;--red:#eb6f92;
+  --text:#e0def4;--muted:#6e6a86;--shadow:rgba(0,0,0,.5);
+  --hero-from:#191724;--hero-to:#1f1d2e;--modal-bg:#1f1d2e;
+  --code-bg:rgba(255,255,255,.06);--row-ep:rgba(49,116,143,.04);
+  --tbl-sep:rgba(62,58,82,.5);--chart-grid:rgba(62,58,82,.5);
+}

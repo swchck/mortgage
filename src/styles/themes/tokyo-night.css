@@ -1,0 +1,8 @@
+html[data-scheme=tokyo-night]{
+  --bg:#1a1b26;--surface:#1f2335;--surface2:#24283b;--border:#3b4261;
+  --gold:#e0af68;--blue:#7aa2f7;--green:#9ece6a;--red:#f7768e;
+  --text:#c0caf5;--muted:#565f89;--shadow:rgba(0,0,0,.5);
+  --hero-from:#1a1b26;--hero-to:#1f2335;--modal-bg:#1f2335;
+  --code-bg:rgba(255,255,255,.06);--row-ep:rgba(158,206,106,.04);
+  --tbl-sep:rgba(59,66,97,.5);--chart-grid:rgba(59,66,97,.5);
+}

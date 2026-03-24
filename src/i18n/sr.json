@@ -1,0 +1,281 @@
+{
+  "title": "Kalkulator hipoteke",
+  "subtitle": "Anuitet · Diferencirani · Prevremena otplata · EURIBOR/SOFR · EKS · Insights",
+  "theme": { "dark": "🌙", "light": "☀️" },
+  "tabs": { "params": "Parametri", "early": "Prevremeno", "index": "Indeks", "costs": "Troškovi" },
+  "currency": "Valuta",
+  "currencies": { "RUB": "₽  Ruska rublja", "EUR": "€  Evro", "USD": "$  Američki dolar", "RSD": "din.  Srpski dinar" },
+  "property": {
+    "title": "Nekretnina",
+    "price": "Cena",
+    "downPayment": "Učešće",
+    "loan": "Kredit",
+    "pmi": "⚠ <20% — moguć PMI"
+  },
+  "affordability": {
+    "salary": "Plata (neto, mesečno)",
+    "maxLoan": "Maks. dostupan kredit",
+    "affordable": "Pristupačno",
+    "notAffordable": "Rata premašuje 50% plate"
+  },
+  "loanAmount": "Iznos kredita",
+  "termYears": "Rok (godina)",
+  "termMonths": "+ meseci",
+  "startDate": "Datum prve rate",
+  "rateType": "Tip kamate",
+  "rateTypes": { "fixed": "Fiksna", "index": "Fiksna + Indeks" },
+  "fixedRate": "Kamata (% godišnje)",
+  "indexLabel": "Indeks",
+  "indexRate": "Indeks, %",
+  "spreadLabel": "Marža, %",
+  "totalRateLabel": "Ukupna kamata = Indeks + Marža",
+  "payType": "Tip otplate",
+  "payTypes": { "annuity": "Anuitetski", "diff": "Diferencirani" },
+  "calculate": "⟳ Izračunaj",
+  "earlyPayments": {
+    "title": "Prevremena otplata",
+    "add": "+ Dodaj",
+    "desc": "Jednokratna ili redovna plaćanja iznad rasporeda.",
+    "empty": "Nema prevremenih otplata",
+    "fromMonth": "Od mes.",
+    "toMonth": "Do mes.",
+    "type": "Tip",
+    "amountTypes": { "fixed": "Iznos", "pct": "% rate" },
+    "amount": "Iznos",
+    "amountPct": "% od rate",
+    "goal": "Cilj",
+    "goals": { "reduce_term": "↓ Rok", "reduce_payment": "↓ Rata" }
+  },
+  "indexChanges": {
+    "title": "Promene indeksa",
+    "add": "+ Dodaj",
+    "desc": "Prognoza promena EURIBOR/SOFR po mesecima.",
+    "empty": "Nema promena",
+    "fromMonth": "Od meseca",
+    "newRate": "Novi indeks (%)"
+  },
+  "emptyState": {
+    "title": "Popunite parametre i kliknite \"Izračunaj\"",
+    "desc": "Anuitet · Dif · EURIBOR/SOFR · Prevremeno · Insights · Excel"
+  },
+  "stats": {
+    "monthlyPayment": "Mesečna rata",
+    "firstPayment": "Prva rata",
+    "lastPayment": "Poslednja rata",
+    "overpayment": "Preplaćeno",
+    "totalPayments": "Ukupno plaćeno",
+    "totalInterest": "Od toga kamata",
+    "psk": "EKS (nominalna)",
+    "ear": "Efekt. kamata EAR",
+    "actualTerm": "Stvarni rok",
+    "principal": "Glavnica",
+    "interest": "Kamata",
+    "acquisitionCosts": "Troškovi kupovine",
+    "grandTotal": "Ukupna cena"
+  },
+  "years": "god.",
+  "months": "mes.",
+  "settings": {
+    "language": "Jezik",
+    "theme": "Tema",
+    "light": "Dan",
+    "dark": "Noć",
+    "colorScheme": "Šema boja"
+  },
+  "insights": {
+    "title": "Strategija otplate",
+    "badge": "Insights",
+    "epEffect": "Efekat prevremene otplate",
+    "diffBetter": "Diferencirani je povoljniji",
+    "extraTenPercent": "Savet: +10% na ratu",
+    "extraTenPercentMore": "Dodatno: +10%",
+    "bestTime": "Najbolje vreme za prevremenu otplatu",
+    "strategy": "Strategija: rok vs rata",
+    "refi": "Refinansiranje −2 pp",
+    "taxDeduction": "Poreski odbitak (Rusija)",
+    "overpayRatio": "Koeficijent preplate",
+    "clickDetails": "Kliknite za detalje",
+    "bestTimeDesc": "Prvih {n} mes. — maks. udeo kamate u rati",
+    "strategyValue": "↓ Rok je povoljniji",
+    "strategyDesc": "↓ Rok = maks. ušteda. ↓ Rata = manje opterećenje",
+    "saved": "Ušteda",
+    "benchmarks": "Za poređenje: 5%/20g ~58%, 10%/20g ~115%, 15%/20g ~190%",
+    "base": "Bez prevremene otplate",
+    "current": "Trenutni plan",
+    "withExtra": "Sa doplatom +10%",
+    "withoutExtra": "Bez doplata",
+    "scenario": "Scenario",
+    "recommendation": "Preporuka: stabilni prihod → ↓ Rok; nestabilni → ↓ Rata",
+    "paymentBreakdown": "Struktura rate",
+    "paymentRange": "Raspon rata",
+    "salaryRule": "Pravilo 50% plate",
+    "salaryRuleDesc": "Rata ≤ 50% plate — kriterijum za odobrenje u Srbiji."
+  },
+  "stressTest": {
+    "title": "Stres-test kamate",
+    "badge": "Rizik",
+    "delta": "Promena",
+    "newRate": "Nova kamata",
+    "newPayment": "Nova rata",
+    "increase": "Rast",
+    "totalExtra": "Ukupno više",
+    "warning": "Promenljiva kamata — veća osetljivost"
+  },
+  "milestones": {
+    "title": "Ključne prekretnice",
+    "badge": "Vremenska linija",
+    "principalPaid": "{pct} glavnice otplaćeno",
+    "principalGtInterest": "Glavnica prelazi kamatu",
+    "remaining": "Ostatak"
+  },
+  "charts": {
+    "title": "Grafikoni",
+    "types": { "payments": "Plaćanja", "balance": "Stanje", "structure": "Struktura", "annual": "Godišnje", "rate": "Kamata", "interestPrincipal": "Glav./Kam.", "cumulative": "Kumulativno" },
+    "timeRanges": { "all": "Sve", "y1": "1 god.", "y5": "5 god.", "y10": "10 god." },
+    "labels": {
+      "principal": "Glavnica",
+      "interest": "Kamata",
+      "early": "Prevremeno",
+      "balance": "Ostatak",
+      "cumInterest": "Kumulat. kamata",
+      "payment": "Rata",
+      "annualRate": "% godišnje"
+    },
+    "descs": {
+      "payments": "Mesečna rata razložena na glavnicu, kamatu i prevremene otplate",
+      "balance": "Dinamika ostatka duga po mesecima",
+      "structure": "Struktura svake rate: udeo glavnice i kamate",
+      "annual": "Ukupna plaćanja po godinama",
+      "rate": "Promene kamatne stope tokom vremena",
+      "interestPrincipal": "Odnos kamate i glavnice u svakoj rati",
+      "cumulative": "Kumulativna plaćanja glavnice i kamate tokom vremena"
+    }
+  },
+  "table": {
+    "title": "Raspored otplate",
+    "csv": "⬇ CSV",
+    "excel": "⬇ Excel",
+    "print": "🖨 Štampaj",
+    "headers": { "no": "# / Datum", "payment": "Rata", "principal": "Glavnica", "interest": "Kamata", "extra": "Dop.", "balance": "Ostatak", "rate": "%" },
+    "total": "UKUPNO"
+  },
+  "costs": {
+    "title": "Troškovi prilikom kupovine",
+    "desc": "Dodatni troškovi koji nisu deo kredita",
+    "total": "Ukupno troškova",
+    "fixed": "Fiksni",
+    "percent": "Procentualni",
+    "grand": "Ukupna cena (kredit + troškovi)",
+    "reset": "Podrazumevano",
+    "add": "+ Dodaj trošak",
+    "currency": "Valuta troškova",
+    "customLabel": "Naziv",
+    "customAmount": "Iznos",
+    "remove": "Obriši"
+  },
+  "rentVsBuy": {
+    "title": "Zakup vs Kupovina",
+    "badge": "Analiza",
+    "monthlyRent": "Mesecni zakup",
+    "breakeven": "Tacka rentabilnosti",
+    "never": "Kupovina se ne isplati",
+    "rentTotal": "Zakup ukupno",
+    "buyTotal": "Neto cena kupovine",
+    "equity": "Kapital"
+  },
+  "scenario": {
+    "title": "Poredenje scenarija",
+    "save": "Sacuvaj scenario",
+    "clear": "Obrisi scenario",
+    "scenarioA": "Scenario A",
+    "scenarioB": "Scenario B",
+    "delta": "Razlika",
+    "badge": "Poredenje"
+  },
+  "inflation": {
+    "title": "Korekcija za inflaciju",
+    "badge": "Realna vrednost",
+    "rate": "Stopa inflacije (% godisnje)",
+    "year": "Godina",
+    "nominal": "Nominalno",
+    "real": "Realno (u danasnjim parama)",
+    "loss": "Gubitak kupovne moci",
+    "summary": "Poslednja rata {nominal} vredi kao {real} danas",
+    "summaryDiff": "Poslednja rata {nominal} vredi kao {real}"
+  },
+  "share": {
+    "button": "Podeli",
+    "copied": "Link kopiran!"
+  },
+  "earlyVsInvest": {
+    "title": "Prevremena otplata vs Investicije",
+    "badge": "Poredenje",
+    "investRate": "Prinos investicija (% godisnje)",
+    "extraAmount": "Mesecni dodatni iznos",
+    "strategy": "Strategija",
+    "totalInvested": "Ukupno ulozeno",
+    "result": "Rezultat",
+    "netBenefit": "Neto korist",
+    "mortgageLabel": "Prevremena otplata",
+    "investLabel": "Investicije",
+    "winner": "Bolja opcija",
+    "note": "Prinos od investicija moze biti oporezovan."
+  },
+  "heatmap": {
+    "title": "Toplotna mapa rata",
+    "badge": "Kamata",
+    "interestShare": "Udeo kamate",
+    "legend": "Udeo kamate %"
+  },
+  "oneTime": "jednokratno",
+  "loading": "učitavanje",
+  "offline": "van mreže",
+  "close": "Zatvori",
+  "lang": "SR",
+  "info": {
+    "button": "Vodič",
+    "title": "Vodič za hipoteku"
+  },
+  "modals": {
+    "loanInfo": {
+      "title": "Iznos kredita",
+      "body": "<p>Glavni dug — iznos koji banka isplaćuje. Ne uključuje učešće, osiguranje i provizije.</p>"
+    },
+    "propInfo": {
+      "title": "Nekretnina",
+      "body": "<p>Unesite cenu nekretnine i učešće — kalkulator će automatski izračunati iznos kredita.</p><p style=\"margin-top:9px;\"><strong>LTV</strong> = Kredit / Cena. Banke preferiraju LTV ≤ 80%.</p>"
+    },
+    "rateTypeInfo": {
+      "title": "Tip kamate",
+      "body": "<p><strong>Fiksna</strong> — ne menja se tokom celog perioda. <strong>Fiksna + Indeks</strong> — tržišni indeks (EURIBOR/SOFR) + fiksna marža banke.</p>"
+    },
+    "fixedRateInfo": {
+      "title": "Kamatna stopa",
+      "body": "<p><strong>Nominalna godišnja stopa</strong> iz ugovora. Mesečna kamata = Stopa / 12.</p>"
+    },
+    "payTypeInfo": {
+      "title": "Tip otplate",
+      "body": "<p><strong>Anuitetski</strong> — jednake rate tokom celog perioda. <strong>Diferencirani</strong> — glavnica se deli na jednake delove, kamata opada.</p>"
+    },
+    "indexInfo": {
+      "title": "EURIBOR / SOFR indeks",
+      "body": "<p><strong>EURIBOR</strong> — međubankarska stopa EU. <strong>SOFR</strong> — američki benčmark (NY Fed).</p>"
+    },
+    "indexRateInfo": {
+      "title": "Vrednost indeksa",
+      "body": "<p>Automatski se učitava iz ECB Data API i NY Fed API.</p>"
+    },
+    "spreadInfo": {
+      "title": "Marža banke",
+      "body": "<p><strong>Marža</strong> — fiksni dodatak banke iznad indeksa. <code>Kamata = Indeks + Marža</code></p>"
+    },
+    "earlyPayInfo": {
+      "title": "Prevremena otplata",
+      "body": "<p>Plaćanje iznad rasporeda. <strong>↓ Rok</strong> — maksimalna ušteda. <strong>↓ Rata</strong> — manje opterećenje.</p>"
+    },
+    "indexChangeInfo": {
+      "title": "Promene indeksa",
+      "body": "<p>Modeliranje prognoziranih promena EURIBOR/SOFR po mesecima.</p>"
+    }
+  }
+}

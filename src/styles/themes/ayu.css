@@ -1,0 +1,16 @@
+html[data-scheme=ayu]{
+  --bg:#0b0e14;--surface:#11151c;--surface2:#1a1f29;--border:#2d333b;
+  --gold:#e6b450;--blue:#59c2ff;--green:#aad94c;--red:#d95757;
+  --text:#bfbdb6;--muted:#636a72;--shadow:rgba(0,0,0,.5);
+  --hero-from:#0b0e14;--hero-to:#11151c;--modal-bg:#11151c;
+  --code-bg:rgba(255,255,255,.06);--row-ep:rgba(170,217,76,.04);
+  --tbl-sep:rgba(45,51,59,.5);--chart-grid:rgba(45,51,59,.5);
+}
+html[data-theme=light][data-scheme=ayu-light]{
+  --bg:#fafafa;--surface:#f3f4f5;--surface2:#e8eaed;--border:#d4d6d9;
+  --gold:#f2ae49;--blue:#399ee6;--green:#86b300;--red:#e65050;
+  --text:#575f66;--muted:#8a9199;--shadow:rgba(0,0,0,.08);
+  --hero-from:#fafafa;--hero-to:#f3f4f5;--modal-bg:#f3f4f5;
+  --code-bg:rgba(0,0,0,.04);--row-ep:rgba(134,179,0,.04);
+  --tbl-sep:rgba(0,0,0,.06);--chart-grid:rgba(200,205,210,.4);
+}

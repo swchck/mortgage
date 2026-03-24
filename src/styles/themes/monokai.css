@@ -1,0 +1,8 @@
+html[data-scheme=monokai]{
+  --bg:#272822;--surface:#2e2f2a;--surface2:#3a3b35;--border:#49483e;
+  --gold:#e6db74;--blue:#66d9ef;--green:#a6e22e;--red:#f92672;
+  --text:#f8f8f2;--muted:#8c8c7a;--shadow:rgba(0,0,0,.5);
+  --hero-from:#272822;--hero-to:#2e2f2a;--modal-bg:#2e2f2a;
+  --code-bg:rgba(255,255,255,.07);--row-ep:rgba(166,226,46,.04);
+  --tbl-sep:rgba(73,72,62,.5);--chart-grid:rgba(73,72,62,.5);
+}

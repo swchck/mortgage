@@ -1,0 +1,16 @@
+html[data-scheme=github-dark]{
+  --bg:#0d1117;--surface:#161b22;--surface2:#1c2129;--border:#30363d;
+  --gold:#d29922;--blue:#58a6ff;--green:#3fb950;--red:#f85149;
+  --text:#e6edf3;--muted:#8b949e;--shadow:rgba(0,0,0,.5);
+  --hero-from:#0d1117;--hero-to:#161b22;--modal-bg:#161b22;
+  --code-bg:rgba(255,255,255,.06);--row-ep:rgba(63,185,80,.04);
+  --tbl-sep:rgba(48,54,61,.5);--chart-grid:rgba(48,54,61,.5);
+}
+html[data-theme=light][data-scheme=github-light]{
+  --bg:#ffffff;--surface:#f6f8fa;--surface2:#eef1f4;--border:#d0d7de;
+  --gold:#9a6700;--blue:#0969da;--green:#1a7f37;--red:#cf222e;
+  --text:#1f2328;--muted:#656d76;--shadow:rgba(0,0,0,.1);
+  --hero-from:#f6f8fa;--hero-to:#ffffff;--modal-bg:#ffffff;
+  --code-bg:rgba(0,0,0,.04);--row-ep:rgba(26,127,55,.04);
+  --tbl-sep:rgba(0,0,0,.06);--chart-grid:rgba(200,210,220,.4);
+}

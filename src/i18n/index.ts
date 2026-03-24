@@ -9,5 +9,6 @@ export default createI18n({
   legacy: false,
   locale: saved || 'ru',
   fallbackLocale: 'ru',
+  warnHtmlMessage: false,
   messages: { ru, en, sr },
 });

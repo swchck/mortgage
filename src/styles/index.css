@@ -24,7 +24,7 @@
 /* ════ LIGHT ════ */
 html[data-theme=light]{
   --bg:#f1f5fb;--surface:#fff;--surface2:#e8eef8;--border:#c8d6ea;
-  --gold:#b06e00;--blue:#1d4ed8;--green:#047857;--red:#b91c1c;
+  --gold:#8a5700;--blue:#1d4ed8;--green:#047857;--red:#b91c1c;
   --text:#0f172a;--muted:#475569;--shadow:rgba(0,0,0,.14);
   --hero-from:#dce8ff;--hero-to:#f1f5fb;--modal-bg:#fff;
   --code-bg:rgba(0,0,0,.06);--row-ep:rgba(4,120,87,.04);

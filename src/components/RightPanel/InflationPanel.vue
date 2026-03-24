@@ -56,7 +56,7 @@ const summary = computed(() => {
 
     <!-- Inflation rate slider -->
     <div style="margin-bottom: 14px">
-      <label style="font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; margin-bottom: 6px">
+      <label for="inflation-rate" style="font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; margin-bottom: 6px">
         {{ t('inflation.rate') }}
         <span class="rate-status" :class="store.inflationStatus">
           <span class="dot" />
@@ -66,6 +66,7 @@ const summary = computed(() => {
       </label>
       <div style="display: flex; align-items: center; gap: 10px">
         <input
+          id="inflation-rate"
           v-model.number="store.inflationRate"
           type="range"
           min="1"

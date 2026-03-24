@@ -10,4 +10,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'chart': ['chart.js'],
+          'xlsx': ['xlsx'],
+          'vue-vendor': ['vue', 'pinia', 'vue-i18n'],
+        },
+      },
+    },
+  },
 });

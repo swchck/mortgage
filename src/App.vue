@@ -15,8 +15,8 @@ onMounted(() => {
 
 <template>
   <AppHero />
-  <div class="main-grid">
+  <main class="main-grid">
     <LeftPanel />
     <RightPanel />
-  </div>
+  </main>
 </template>

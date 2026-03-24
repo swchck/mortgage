@@ -13,8 +13,8 @@ const { t } = useI18n();
   <div style="padding: 16px 18px 4px">
     <!-- Currency -->
     <div class="ig">
-      <label>{{ t('currency') }}</label>
-      <select :value="store.currency" @change="store.setCurrency(($event.target as HTMLSelectElement).value as any)">
+      <label for="currency-select">{{ t('currency') }}</label>
+      <select id="currency-select" :value="store.currency" @change="store.setCurrency(($event.target as HTMLSelectElement).value as any)">
         <option value="RUB">{{ t('currencies.RUB') }}</option>
         <option value="EUR">{{ t('currencies.EUR') }}</option>
         <option value="USD">{{ t('currencies.USD') }}</option>
@@ -104,9 +104,9 @@ const { t } = useI18n();
 
     <!-- Loan -->
     <div class="ig">
-      <label>{{ t('loanAmount') }} <TipIcon modal-key="loanInfo" /></label>
+      <label for="loan-amount">{{ t('loanAmount') }} <TipIcon modal-key="loanInfo" /></label>
       <div style="position: relative">
-        <input v-model.number="store.loan" type="number" min="0" step="10000" />
+        <input id="loan-amount" v-model.number="store.loan" type="number" min="0" step="10000" />
         <span style="position: absolute; right: 9px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 11px; pointer-events: none">{{ store.sym }}</span>
       </div>
     </div>
@@ -114,17 +114,17 @@ const { t } = useI18n();
     <!-- Term -->
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
       <div class="ig">
-        <label>{{ t('termYears') }}</label>
-        <input v-model.number="store.termYears" type="number" min="1" max="50" />
+        <label for="term-years">{{ t('termYears') }}</label>
+        <input id="term-years" v-model.number="store.termYears" type="number" min="1" max="50" />
       </div>
       <div class="ig">
-        <label>{{ t('termMonths') }}</label>
-        <input v-model.number="store.termMonths" type="number" min="0" max="11" />
+        <label for="term-months">{{ t('termMonths') }}</label>
+        <input id="term-months" v-model.number="store.termMonths" type="number" min="0" max="11" />
       </div>
     </div>
     <div class="ig">
-      <label>{{ t('startDate') }}</label>
-      <input v-model="store.startDate" type="date" />
+      <label for="start-date">{{ t('startDate') }}</label>
+      <input id="start-date" v-model="store.startDate" type="date" />
     </div>
 
     <hr />
@@ -153,14 +153,14 @@ const { t } = useI18n();
     <!-- Index rate -->
     <div v-if="store.rateType === 'index'">
       <div class="ig">
-        <label>
+        <label for="index-type">
           {{ t('indexLabel') }} <TipIcon modal-key="indexInfo" />
           <span class="rate-status" :class="store.indexStatus">
             <span class="dot" />
             {{ store.indexStatus === 'live' ? 'live' : store.indexStatus === 'stale' ? t('offline') : t('loading') }}
           </span>
         </label>
-        <select :value="store.indexType" @change="store.indexType = ($event.target as HTMLSelectElement).value as any; store.onIndexTypeChange()">
+        <select id="index-type" :value="store.indexType" @change="store.indexType = ($event.target as HTMLSelectElement).value as any; store.onIndexTypeChange()">
           <option value="euribor3m">EURIBOR 3M</option>
           <option value="euribor6m">EURIBOR 6M</option>
           <option value="euribor12m">EURIBOR 12M</option>
@@ -170,12 +170,12 @@ const { t } = useI18n();
       </div>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
         <div class="ig">
-          <label>{{ t('indexRate') }} <TipIcon modal-key="indexRateInfo" /></label>
-          <input v-model.number="store.indexRate" type="number" min="-5" max="20" step="0.01" />
+          <label for="index-rate">{{ t('indexRate') }} <TipIcon modal-key="indexRateInfo" /></label>
+          <input id="index-rate" v-model.number="store.indexRate" type="number" min="-5" max="20" step="0.01" />
         </div>
         <div class="ig">
-          <label>{{ t('spreadLabel') }} <TipIcon modal-key="spreadInfo" /></label>
-          <input v-model.number="store.spread" type="number" min="0" max="20" step="0.01" />
+          <label for="spread-rate">{{ t('spreadLabel') }} <TipIcon modal-key="spreadInfo" /></label>
+          <input id="spread-rate" v-model.number="store.spread" type="number" min="0" max="20" step="0.01" />
         </div>
       </div>
       <div class="rate-pill">{{ store.totalRate.toFixed(2) }}%</div>

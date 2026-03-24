@@ -77,7 +77,7 @@ const darkSchemes: SchemeOption[] = [
 ];
 
 const lightSchemes: SchemeOption[] = [
-  { key: 'default', name: 'Default', color: '#b06e00' },
+  { key: 'default', name: 'Default', color: '#8a5700' },
   { key: 'solarized-light', name: 'Solarized', color: '#b58900' },
   { key: 'nord-light', name: 'Nord', color: '#5e81ac' },
   { key: 'github-light', name: 'GitHub', color: '#0969da' },
@@ -177,7 +177,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="hero">
+  <header class="hero">
     <div class="hero-inner">
       <div>
         <h1 class="hero-title">{{ t('title') }}</h1>
@@ -195,15 +195,15 @@ onBeforeUnmount(() => {
           <span class="badge badge-green">ПСК/EAR</span>
         </div>
         <!-- Info -->
-        <button class="theme-btn" @click="showInfo = true"><BookOpen :size="16" /></button>
+        <button class="theme-btn" :aria-label="t('info.title')" @click="showInfo = true"><BookOpen :size="16" /></button>
         <!-- Share -->
-        <button class="theme-btn" :title="copied ? t('share.copied') : t('share.button')" @click="share">
+        <button class="theme-btn" :aria-label="copied ? t('share.copied') : t('share.button')" :title="copied ? t('share.copied') : t('share.button')" @click="share">
           <Check v-if="copied" :size="16" />
           <Share2 v-else :size="16" />
         </button>
         <!-- Settings -->
         <div ref="settingsEl" style="position: relative">
-          <button class="theme-btn" @click.stop="showSettings = !showSettings"><Settings :size="18" /></button>
+          <button class="theme-btn" :aria-label="t('settings.theme')" @click.stop="showSettings = !showSettings"><Settings :size="18" /></button>
           <div v-if="showSettings" class="settings-panel" @click.stop>
             <div class="settings-section">
               <div class="settings-label">{{ t('settings.language') }}</div>
@@ -240,7 +240,7 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <AppModal :open="showInfo" :title="t('info.title')" :body-html="guideHtml" wide @close="showInfo = false" />
 </template>

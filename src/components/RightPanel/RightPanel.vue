@@ -1,17 +1,19 @@
 <script setup lang="ts">
+import { defineAsyncComponent } from 'vue';
 import { useCalcStore } from '@/stores/useCalcStore';
 import { useI18n } from 'vue-i18n';
 import { BarChart3 } from 'lucide-vue-next';
 import InsightsPanel from './InsightsPanel.vue';
-import MilestonesPanel from './MilestonesPanel.vue';
-import ChartPanel from './ChartPanel.vue';
-import ScheduleTable from './ScheduleTable.vue';
-import CostsSummaryPanel from './CostsSummaryPanel.vue';
-import StressTestPanel from './StressTestPanel.vue';
-import InflationPanel from './InflationPanel.vue';
-import RentVsBuyPanel from './RentVsBuyPanel.vue';
-import ScenarioComparePanel from './ScenarioComparePanel.vue';
-import HeatmapPanel from './HeatmapPanel.vue';
+
+const ChartPanel = defineAsyncComponent(() => import('./ChartPanel.vue'));
+const ScheduleTable = defineAsyncComponent(() => import('./ScheduleTable.vue'));
+const MilestonesPanel = defineAsyncComponent(() => import('./MilestonesPanel.vue'));
+const CostsSummaryPanel = defineAsyncComponent(() => import('./CostsSummaryPanel.vue'));
+const StressTestPanel = defineAsyncComponent(() => import('./StressTestPanel.vue'));
+const InflationPanel = defineAsyncComponent(() => import('./InflationPanel.vue'));
+const RentVsBuyPanel = defineAsyncComponent(() => import('./RentVsBuyPanel.vue'));
+const ScenarioComparePanel = defineAsyncComponent(() => import('./ScenarioComparePanel.vue'));
+const HeatmapPanel = defineAsyncComponent(() => import('./HeatmapPanel.vue'));
 
 const store = useCalcStore();
 const { t } = useI18n();
